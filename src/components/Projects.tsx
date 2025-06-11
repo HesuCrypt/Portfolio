@@ -2,10 +2,25 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Calendar, Code, Database, Palette, Wrench } from 'lucide-react';
 
-const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+interface Project {
+  id: number;
+  title: string;
+  subtitle: string;
+  period: string;
+  status: 'Completed' | 'In Development';
+  description: string;
+  longDescription: string;
+  technologies: string[];
+  features: string[];
+  category: 'Full-Stack Web Development' | 'Hardware & Networking' | 'Frontend Development';
+  image: string;
+  icon: React.ElementType;
+}
 
-  const projects = [
+const Projects: React.FC = () => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const projects: Project[] = [
     {
       id: 1,
       title: 'Library Management System',
@@ -71,7 +86,7 @@ const Projects = () => {
     }
   ];
 
-  const getCategoryIcon = (category) => {
+  const getCategoryIcon = (category: Project['category']): React.ElementType => {
     switch (category) {
       case 'Full-Stack Web Development':
         return Database;
@@ -84,7 +99,7 @@ const Projects = () => {
     }
   };
 
-  const getStatusColor = (status) => {
+  const getStatusColor = (status: Project['status']): string => {
     switch (status) {
       case 'Completed':
         return 'bg-green-100 text-green-800';

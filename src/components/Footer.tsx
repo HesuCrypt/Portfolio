@@ -87,7 +87,7 @@ const Footer = () => {
             className="text-gray-400 text-center md:text-left mb-4 md:mb-0"
           >
             © {currentYear} Louisse Dominique Bertillo. Made with{' '}
-            <Heart size={16} className="inline text-red-500 mx-1" />
+            <Heart size={16} className="inline text-black-500 mx-1" />
             and React.
           </motion.p>
 

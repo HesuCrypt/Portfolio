@@ -2,8 +2,22 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin, Users } from 'lucide-react';
 
-const Experience = () => {
-  const experiences = [
+interface Experience {
+  id: number;
+  title: string;
+  company: string;
+  location: string;
+  period: string;
+  type: 'Full-time' | 'Contract' | 'Internship';
+  status: 'Current' | 'Completed';
+  description: string;
+  responsibilities: string[];
+  achievements: string[];
+  skills: string[];
+}
+
+const Experience: React.FC = () => {
+  const experiences: Experience[] = [
     {
       id: 1,
       title: 'UI/UX Designer',
@@ -52,7 +66,7 @@ const Experience = () => {
     }
   ];
 
-  const getStatusColor = (status) => {
+  const getStatusColor = (status: Experience['status']): string => {
     switch (status) {
       case 'Current':
         return 'bg-green-100 text-green-800 border-green-200';
@@ -63,7 +77,7 @@ const Experience = () => {
     }
   };
 
-  const getTypeColor = (type) => {
+  const getTypeColor = (type: Experience['type']): string => {
     switch (type) {
       case 'Full-time':
         return 'bg-black text-white';
