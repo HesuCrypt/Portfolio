@@ -9,7 +9,7 @@ const Education = () => {
       institution: 'Access Computer College',
       location: 'Apec New Manila',
       period: '2022 - Present',
-      gwa: '92.18',
+      gwa: '92.48',
       status: 'Current',
       description: 'Pursuing comprehensive education in information technology with focus on web development, software engineering, and database management.',
       achievements: [
