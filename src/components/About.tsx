@@ -4,7 +4,7 @@ import { User, Target, Heart } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { number: '92.48', label: 'GWA', icon: Target },
+    { number: '92.18', label: 'GWA', icon: Target },
     { number: '2+', label: 'Years Experience', icon: Heart },
     { number: '10+', label: 'Tech Skills', icon: User },
   ];
@@ -39,7 +39,7 @@ const About = () => {
               by curiosity and a desire to create meaningful digital experiences.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Currently pursuing my Bachelor's degree with an impressive GWA of 92.48, 
+              Currently pursuing my Bachelor's degree with an impressive GWA of 92.18, 
               I combine academic excellence with practical skills in modern web technologies. 
               I believe in continuous learning and staying updated with the latest industry trends.
             </p>
