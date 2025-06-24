@@ -14,8 +14,7 @@ const Education = () => {
       description: 'Pursuing comprehensive education in information technology with focus on web development, software engineering, and database management.',
       achievements: [
         'Maintained Dean\'s List status',
-        'Completed capstone project with high distinction',
-        'Active participation in programming competitions'
+        'Completed capstone project with high distinction'
       ]
     },
     {
@@ -26,9 +25,7 @@ const Education = () => {
       status: 'Completed',
       description: 'Completed senior high school education with strong foundation in mathematics, science, and technology.',
       achievements: [
-        'Honor student throughout senior high',
-        'Active in technology clubs',
-        'Participated in programming workshops'
+        'Active in technology clubs'
       ]
     },
     {
