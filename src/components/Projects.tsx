@@ -6,6 +6,7 @@ interface Project {
   id: number;
   title: string;
   subtitle: string;
+  link?: string;
   period: string;
   status: 'Completed' | 'In Development';
   description: string;
@@ -23,24 +24,24 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Library Management System',
-      subtitle: 'Capstone Project',
+      title: 'Game Library Website',
+      subtitle: 'Personal Project',
+      link: 'https://hesucrypt.github.io/game/',
       period: 'July 2024 - February 2025',
-      status: 'In Development',
-      description: 'Developed a comprehensive Library Management System as a capstone project, leveraging MySQL, PHP, CSS, and HTML to build an intuitive application for managing books, members, and transactions efficiently.',
-      longDescription: 'This full-stack web application serves as my capstone project, demonstrating proficiency in database design, server-side programming, and user interface development. The system features a clean, responsive design that provides librarians with powerful tools for inventory management, member registration, and transaction tracking.',
-      technologies: ['MySQL', 'PHP', 'CSS', 'HTML', 'JavaScript'],
+      status: 'Completed',
+      description: 'A web-based platform to browse and manage a personal collection of video games, built with a clean and modern user interface.',
+      longDescription: 'This project is a fully-featured game library website that allows users to explore, search, and manage their video game collections. It leverages modern web technologies to provide a seamless and engaging user experience, with features like detailed game views, dynamic filtering, and a responsive design that works across all devices.',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
       features: [
-        'Book inventory management with search and filtering',
-        'Member registration and profile management',
-        'Check-in/check-out transaction system',
-        'Overdue book tracking and notifications',
-        'Administrative dashboard with analytics',
-        'Responsive design for mobile and desktop'
+        'Dynamic game browsing with search and filtering',
+        'Detailed game information pages',
+        'User-based collections and wishlists',
+        'Responsive design for mobile and desktop',
+        'Integration with external game APIs'
       ],
-      category: 'Full-Stack Web Development',
+      category: 'Frontend Development',
       image: '/api/placeholder/600/400',
-      icon: Database
+      icon: Code
     },
     {
       id: 2,
@@ -237,6 +238,25 @@ const Projects: React.FC = () => {
                         <selectedProject.icon size={64} className="text-gray-400" />
                       </div>
                       
+                      {selectedProject.link && (
+                        <a
+                          href={selectedProject.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300"
+                        >
+                          <ExternalLink size={18} />
+                          View Live Project
+                        </a>
+                      )}
+                    </div>
+                    
+                    <div>
+                      <h3 className="text-xl font-bold text-black mb-4">About the Project</h3>
+                      <p className="text-gray-600 leading-relaxed mb-6">
+                        {selectedProject.longDescription}
+                      </p>
+
                       <div className="space-y-4">
                         <div>
                           <h4 className="font-semibold text-black mb-2">Technologies Used:</h4>
@@ -273,23 +293,23 @@ const Projects: React.FC = () => {
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div>
-                      <h4 className="font-semibold text-black mb-4">Project Description:</h4>
-                      <p className="text-gray-600 leading-relaxed mb-6">
-                        {selectedProject.longDescription}
-                      </p>
+                  <div className="mt-8">
+                    <h4 className="font-semibold text-black mb-4">Project Description:</h4>
+                    <p className="text-gray-600 leading-relaxed mb-6">
+                      {selectedProject.longDescription}
+                    </p>
 
-                      <h4 className="font-semibold text-black mb-4">Key Features:</h4>
-                      <ul className="space-y-2">
-                        {selectedProject.features.map((feature, index) => (
-                          <li key={index} className="flex items-start gap-2 text-gray-600">
-                            <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    <h4 className="font-semibold text-black mb-4">Key Features:</h4>
+                    <ul className="space-y-2">
+                      {selectedProject.features.map((feature, index) => (
+                        <li key={index} className="flex items-start gap-2 text-gray-600">
+                          <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </motion.div>
