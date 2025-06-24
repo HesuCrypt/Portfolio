@@ -35,7 +35,7 @@ const Education = () => {
       degree: 'National Certificate II (NC II)',
       institution: 'TESDA',
       location: 'Philippines',
-      period: 'Year Obtained',
+      period: '2025',
       status: 'Completed',
       description: 'Awarded National Certificate II (NC II) by TESDA, demonstrating technical proficiency and industry-standard skills.',
       achievements: [
