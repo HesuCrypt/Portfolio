@@ -30,6 +30,18 @@ const Education = () => {
         'Active in technology clubs',
         'Participated in programming workshops'
       ]
+    },
+    {
+      degree: 'National Certificate II (NC II)',
+      institution: 'TESDA',
+      location: 'Philippines',
+      period: 'Year Obtained',
+      status: 'Completed',
+      description: 'Awarded National Certificate II (NC II) by TESDA, demonstrating technical proficiency and industry-standard skills.',
+      achievements: [
+        'Certified by TESDA',
+        'Demonstrated technical proficiency'
+      ]
     }
   ];
 

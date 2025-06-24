@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { User, Target, Heart } from 'lucide-react';
 
@@ -42,6 +41,7 @@ const About = () => {
               Currently pursuing my Bachelor's degree with an impressive GWA of 92.48, 
               I combine academic excellence with practical skills in modern web technologies. 
               I have accumulated 4 months of hands-on experience in the field, and I believe in continuous learning and staying updated with the latest industry trends.
+              I also hold a TESDA National Certificate II (NC II), further validating my technical skills.
             </p>
 
             <div className="grid grid-cols-3 gap-8">
