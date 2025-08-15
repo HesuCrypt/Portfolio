@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, Calendar, Code, Database, Palette, Wrench } from 'lucide-react';
+import { ExternalLink, Calendar, Code, Database, Wrench } from 'lucide-react';
 
 interface Project {
   id: number;

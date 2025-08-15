@@ -7,7 +7,7 @@ const Education = () => {
     {
       degree: 'Bachelor of Science in Information Technology',
       institution: 'Access Computer College',
-      location: 'Kaunlaran, Campus',
+      location: 'Apec New Manila',
       period: '2022 - Present',
       gwa: '92.48',
       status: 'Current',

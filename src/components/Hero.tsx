@@ -20,7 +20,7 @@ const Hero = () => {
   };
 
   const name = "LOUISSE DOMINIQUE BERTILLO";
-  const title = "Junior Web Developer";
+  const title = "Information Technology Professional";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">

@@ -31,7 +31,8 @@ const Footer = () => {
           >
             <h3 className="text-2xl font-bold mb-4">Louisse Dominique Bertillo</h3>
             <p className="text-gray-400 leading-relaxed">
-            Junior Web Developer passionate about creating innovative web solutions and engaging user experiences.
+              Information Technology Professional passionate about creating 
+              innovative web solutions and beautiful user experiences.
             </p>
           </motion.div>
 
