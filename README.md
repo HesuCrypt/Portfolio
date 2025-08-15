@@ -1,6 +1,6 @@
 # Louisse Dominique Bertillo - Portfolio Website
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases my skills, projects, and experience as an Information Technology professional.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases my skills, projects, and experience as a Junior Web Developer.
 
 ## Features
 

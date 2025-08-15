@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Calendar, Award, MapPin } from 'lucide-react';
 
@@ -7,7 +6,7 @@ const Education = () => {
     {
       degree: 'Bachelor of Science in Information Technology',
       institution: 'Access Computer College',
-      location: 'Apec New Manila',
+      location: 'Kaunlaran, Campus',
       period: '2022 - Present',
       gwa: '92.48',
       status: 'Current',

@@ -30,12 +30,13 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-6">
-              Passionate Technology Professional
+              Junior Web Developer
             </h3>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              I am a dedicated Information Technology student with a strong passion for 
-              web development and UI/UX design. My journey in technology has been driven 
-              by curiosity and a desire to create meaningful digital experiences.
+              Ever since I got into technology, I've been drawn to web development and UI/UX design. 
+              As an Information Technology student, I love exploring how to make websites both visually appealing and easy to use. 
+              My curiosity drives me to keep learning and improving, and I enjoy turning ideas into digital experiences that people find helpful and engaging. 
+              For me, it's about creating something that not only works but also leaves a positive impression on others.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Currently pursuing my Bachelor's degree with an impressive GWA of 92.48, 

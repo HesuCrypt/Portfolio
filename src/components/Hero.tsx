@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -20,7 +19,7 @@ const Hero = () => {
   };
 
   const name = "LOUISSE DOMINIQUE BERTILLO";
-  const title = "Information Technology Professional";
+  const title = "Junior Web Developer";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">

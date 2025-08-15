@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
       location: 'Philippines',
       period: '2025',
       type: 'Contract',
-      status: 'Current',
+      status: 'Completed',
       description: 'Creating intuitive and visually appealing user interfaces and experiences for web applications. Collaborating with development teams to implement design systems and ensure consistent user experiences across platforms.',
       responsibilities: [
         'Design user interfaces for web applications using Figma',
@@ -48,7 +48,7 @@ const Experience: React.FC = () => {
       location: 'Philippines',
       period: '2025',
       type: 'Contract',
-      status: 'Current',
+      status: 'Completed',
       description: 'Developing responsive and interactive web applications using modern frontend technologies. Working closely with design teams to bring user interfaces to life with clean, efficient code.',
       responsibilities: [
         'Develop responsive web applications using React and TypeScript',
@@ -100,10 +100,10 @@ const Experience: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Professional Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Internship Experience</h2>
           <div className="w-24 h-1 bg-black mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Professional experience in UI/UX design and frontend development, 
+            Internship experience in UI/UX design and frontend development, 
             creating impactful digital solutions for modern businesses.
           </p>
         </motion.div>
